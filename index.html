@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      /* #region CLASSES */
+      .logo {
+        background-color: #222f3f;
+      }
+
+      .underLogo {
+        background-color: #364757;
+        color: #dce8eb;
+      }
+
+      /* #endregion*/
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #e9edee;
+        min-width: 1200px;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 45px;
+      }
+
+      h3 {
+        font-weight: bolder;
+        font-size: x-large;
+        margin-top: 30px;
+      }
+
+      /* #region HEADER */
+
+      header img {
+        height: 2.3em;
+        padding: 10px;
+        padding-left: 30px;
+        padding-bottom: 5px;
+      }
+
+      ul {
+        display: table;
+      }
+
+      li {
+        vertical-align: middle;
+        display: table-cell;
+        padding: 6px;
+        padding-right: 15px;
+      }
+
+      li:first-of-type {
+        padding-left: 20px;
+      }
+
+      /* #endregion*/
+
+      /* #region NAV*/
+
+      nav {
+        color: white;
+        text-align: center;
+        margin: 1.5em;
+      }
+
+      nav section {
+        margin-bottom: 1.5em;
+      }
+
+      nav section:first-of-type {
+        background-color: #f56600;
+        padding: 8px;
+      }
+
+      nav section:last-of-type {
+        background-image: url(assets/images/bg-image.png);
+        background-size: 100%;
+        padding: 4em;
+        padding-bottom: 2em;
+      }
+
+      /* #endregion */
+
+      /* #region MAIN*/
+
+      main {
+        margin: 1.5em;
+      }
+
+      main section:first-of-type {
+        background-color: white;
+        margin-bottom: 30px;
+      }
+
+      main section:first-of-type table {
+        margin: auto;
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .carousel {
+        width: 250px;
+        height: 300px;
+
+        border-radius: 1em;
+
+        background-position: center;
+        background-size: cover;
+        margin: 1em;
+
+        box-shadow: 9px 6px 13px -4px rgba(0, 0, 0, 0.48);
+      }
+
+      .imageOverview {
+        width: 100%;
+        height: 350px;
+        display: block;
+
+        background-position: center;
+        background-size: cover;
+      }
+
+      /* #endregion */
+
+      /* #region FOOTER */
+
+      footer .underLogo {
+        text-align: center;
+        padding: 10px;
+      }
+      footer .underLogo a:link {
+        color: #dce8eb;
+      }
+
+      /* #endregion */
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./assets/images/logo.png" />
+      </section>
+      <section class="underLogo">
+        <ul>
+          <li><a>All </a></li>
+          <li><a>Today's deals </a></li>
+          <li><a>Customer Service</a></li>
+          <li><a>Registry </a></li>
+          <li><a>Gift Cards </a></li>
+          <li><a>Sell </a></li>
+        </ul>
+      </section>
+    </header>
+
+    <nav>
+      <section><p>Shop All holiday Gift Cards</p></section>
+      <section>
+        <h2>Holiday Gift Guides</h2>
+        <h3>Be a go-gifter</h3>
+      </section>
+    </nav>
+
+    <main>
+      <!-- CAROUSEL -->
+      <section>
+        <div>Find the perfect gift</div>
+        <table>
+          <td>
+            <div
+              style="background-image: url(assets/images/img_1.jpg)"
+              id="img1"
+              class="carousel"
+            ></div>
+          </td>
+          <td>
+            <div
+              style="background-image: url(assets/images/img_2.jpg)"
+              class="carousel"
+            ></div>
+          </td>
+          <td>
+            <div
+              style="background-image: url(assets/images/img_3.jpg)"
+              class="carousel"
+            ></div>
+          </td>
+          <td>
+            <div
+              style="
+                background-image: url(assets/images/img_4.jpg);
+                float: inline-end;
+              "
+              class="carousel"
+            ></div>
+          </td>
+        </table>
+      </section>
+      <!-- GAMING -->
+      <section>
+        <div
+          style="background-image: url(assets/images/img_9.png)"
+          class="imageOverview"
+        ></div>
+        <p>Play the gifting game <span>Shop gaming</span></p>
+      </section>
+      <!-- MUSIC -->
+      <section>
+        <div
+          style="background-image: url(assets/images/img_10.png)"
+          class="imageOverview"
+        ></div>
+        <p>The sound of cheer<span>Shop Audio & Accessories</span></p>
+      </section>
+    </main>
+
+    <footer>
+      <section class="underLogo"><a href=".logo">Back to top</a></section>
+      <section class="logo"><img src="./assets/images/logo.png" /></section>
+    </footer>
+
+    <script src="scripts/D5.js"></script>
+  </body>
+</html>
