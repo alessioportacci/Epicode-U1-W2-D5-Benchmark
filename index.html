@@ -9,22 +9,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <style>
-      /* #region CLASSES */
-      .logo {
-        background-color: #222f3f;
-      }
-
-      .underLogo {
-        background-color: #364757;
-        color: #dce8eb;
-      }
-
-      /* #endregion*/
-
       body {
         font-family: Arial, Helvetica, sans-serif;
         background-color: #e9edee;
-        min-width: 1200px;
       }
 
       h2 {
@@ -37,6 +24,18 @@
         font-size: x-large;
         margin-top: 30px;
       }
+
+      /* #region CLASSES */
+      .logo {
+        background-color: #222f3f;
+      }
+
+      .underLogo {
+        background-color: #364757;
+        color: #dce8eb;
+      }
+
+      /* #endregion*/
 
       /* #region HEADER */
 
@@ -96,6 +95,17 @@
         margin: 1.5em;
       }
 
+      main section p:not(main section p:nth-child(1)) {
+        text-align: center;
+        margin: 5px;
+        margin-bottom: 25px;
+      }
+
+      main section p:nth-child(1) {
+        padding-top: 15px;
+        margin-left: 25px;
+      }
+
       main section:first-of-type {
         background-color: white;
         margin-bottom: 30px;
@@ -108,14 +118,31 @@
         white-space: nowrap;
       }
 
+      main section p a {
+        color: #2596be;
+        font-weight: bold;
+        font-size: 13px;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        width: 25%;
+      }
+
       .carousel {
-        width: 250px;
-        height: 300px;
+        width: 90%;
+        height: 18vh;
 
         border-radius: 1em;
 
         background-position: center;
         background-size: cover;
+
         margin: 1em;
 
         box-shadow: 9px 6px 13px -4px rgba(0, 0, 0, 0.48);
@@ -123,7 +150,7 @@
 
       .imageOverview {
         width: 100%;
-        height: 350px;
+        height: 20vh;
         display: block;
 
         background-position: center;
@@ -134,6 +161,16 @@
 
       /* #region FOOTER */
 
+      footer a:visited {
+        color: #dce8eb;
+      }
+
+      footer section img {
+        display: block;
+        margin: auto;
+        width: 120px;
+        padding: 40px;
+      }
       footer .underLogo {
         text-align: center;
         padding: 10px;
@@ -146,7 +183,7 @@
     </style>
   </head>
   <body>
-    <header>
+    <header id="header">
       <section class="logo">
         <img src="./assets/images/logo.png" />
       </section>
@@ -173,7 +210,13 @@
     <main>
       <!-- CAROUSEL -->
       <section>
-        <div>Find the perfect gift</div>
+        <p>
+          Find the perfect gift
+          <a
+            href="https://www.amazon.it/gp/goldbox/?ie=UTF8&tag=slhyin-21&hvadid=606840102871&hvpos=&hvexid=&hvnetw=g&hvrand=9994648809364989297&hvpone=&hvptwo=&hvqmt=b&hvdev=c&ref=pd_sl_5ggw66z0om_e"
+            >Shop now</a
+          >
+        </p>
         <table>
           <td>
             <div
@@ -211,7 +254,13 @@
           style="background-image: url(assets/images/img_9.png)"
           class="imageOverview"
         ></div>
-        <p>Play the gifting game <span>Shop gaming</span></p>
+        <p>
+          Play the gifting game
+          <a
+            href="https://www.amazon.it/gp/browse.html?node=412603031&ref_=nav_em__vid_HPVG_0_2_13_1"
+            >Shop gaming</a
+          >
+        </p>
       </section>
       <!-- MUSIC -->
       <section>
@@ -219,12 +268,18 @@
           style="background-image: url(assets/images/img_10.png)"
           class="imageOverview"
         ></div>
-        <p>The sound of cheer<span>Shop Audio & Accessories</span></p>
+        <p>
+          The sound of cheer
+          <a
+            href="https://www.amazon.it/gp/browse.html?node=412600031&ref_=nav_em__mu_0_2_12_2"
+            >Shop Audio & Accessories</a
+          >
+        </p>
       </section>
     </main>
 
     <footer>
-      <section class="underLogo"><a href=".logo">Back to top</a></section>
+      <section class="underLogo"><a href="#header">Back to top</a></section>
       <section class="logo"><img src="./assets/images/logo.png" /></section>
     </footer>
 
